@@ -16,6 +16,55 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 inquirer.prompt([
+   
+    {
+        type: "list",
+        name: "TOC",
+        message: "Press Enter to Confirm Table of Contents section to be added to README",
+        choices: ["#table of contents"]
+    },
+    {
+        type: "list",
+        name: "description",
+        message: "Press Enter to Confirm Description section to be added to README",
+        choices: ["#description"]
+    },
+    {
+        type: "list",
+        name: "installation",
+        message: "Press Enter to Confirm Installation section to be added to README",
+        choices: ["#installation"]
+    },
+    {
+        type: "list",
+        name: "usage",
+        message: "Press Enter to Confirm Usage section to be added to README",
+        choices: ["#usage"]
+    },
+    {
+        type: "list",
+        name: "contributing",
+        message: "Press Enter to Confirm Contributing section to be added to README",
+        choices: ["#contributing"]
+    },
+    {
+        type: "list",
+        name: "tests",
+        message: "Press Enter to Confirm Tests section to be added to README",
+        choices: ["#tests"]
+    },
+    {
+        type: "list",
+        name: "questions",
+        message: "Press Enter to Confirm Questions section to be added to README",
+        choices: ["#questions"]
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "Press Enter to Confirm License section to be added to README",
+        choices: ["#license"]
+    },
     {
         type: "input",
         name: "projectTitle",
@@ -25,60 +74,6 @@ inquirer.prompt([
         type: "input",
         name: "about",
         message: "Tell us about your project"
-    },
-    {
-        type: "list",
-        name: "TOC",
-        message: "Please confirm table of contents to be added to README",
-        choices: ["#table of contents"]
-    },
-    {
-        type: "list",
-        name: "description",
-        message: "Please confirm description to be added to README",
-        choices: ["#description"]
-    },
-    {
-        type: "list",
-        name: "installation",
-        message: "Please confirm installation to add to README",
-        choices: ["#installation"]
-    },
-    {
-        type: "list",
-        name: "usage",
-        message: "Please confirm usage to add to README",
-        choices: ["#usage"]
-    },
-    {
-        type: "list",
-        name: "contributing",
-        message: "Please confirm contributing to add to README",
-        choices: ["#contributing"]
-    },
-    {
-        type: "list",
-        name: "tests",
-        message: "Please confirm tests to add to README",
-        choices: ["#tests"]
-    },
-    {
-        type: "list",
-        name: "questions",
-        message: "Please confirm questions to be added to README",
-        choices: ["#questions"]
-    },
-    {
-        type: "list",
-        name: "license",
-        message: "Please confirm license to add to README",
-        choices: ["#license"]
-    },
-    {
-        type: "list",
-        name: "questions",
-        message: "Please select questions",
-        choices: ["#questions"]
     },
     {
         type: "input",
@@ -104,19 +99,37 @@ inquirer.prompt([
 
     const readMe = `
 # ${res.projectTitle}
-\r\n ## Description
-\r\n #### ${res.about}
-\r\n
 \r\n ## Table of Contents
 \r\n * [Description](${res.description})
 \r\n * [Installation](${res.installation})
+\r\n * [Usage](${res.usage})
+\r\n * [License](${res.lics})
+\r\n * [Contributing](${res.contributing})
+\r\n * [Tests](${res.tests})
 \r\n * [Questions](${res.questions})
 
+
+\r\n ## Description
+\r\n #### ${res.about}
+\r\n
+
+## Installation
+
+## Usage
+
+## License
+
+## Contributing
+
+## Tests
+
 \r\n ## Questions
-\r\n [GitHUb Profile](https://github.com/${res.github})
+\r\n [GitHub Profile](https://github.com/${res.github})
 \r\n ${res.email}
 
 <img src="https://img.shields.io/static/v1.svg?label=License&message=${res.license}&color=red"/>
+
+\r\n ##
     
     `;
 
