@@ -68,27 +68,47 @@ inquirer.prompt([
     {
         type: "input",
         name: "projectTitle",
-        message: "What is your project title?"
+        message: "What is Your Project Title?"
     },
     {
         type: "input",
         name: "about",
-        message: "Tell us about your project"
+        message: "Tell Us About Your Project."
     },
     {
         type: "input",
         name: "github",
-        message: "What's your github username"
+        message: "What is Your GitHub Username?"
     },
     {
         type: "input",
         name: "email",
-        message: "Enter Your Email Address "
+        message: "What is Your Email Address? "
+    },
+    {
+        type: "input",
+        name: "install",
+        message: "Please Enter Your installation instructions.",
+    },
+    {
+        type: "input",
+        name: "usageinfo",
+        message: "Please Enter Your Usage Information.",
+    },
+    {
+        type: "input",
+        name: "contribution",
+        message: "Please Enter Your Contribution Guidelines.",
+    },
+    {
+        type: 'input',
+        name: "testinst",
+        message: "Please Enter Your Test Instructions.",
     },
     {
         type: "list",
         name: "license",
-        message: "Please select a license",
+        message: "Please Select a License from the following:",
         choices: ["MIT", "TNT", "CNC", "None"] 
     }
 
@@ -98,12 +118,15 @@ inquirer.prompt([
     console.log(res);
 
     const readMe = `
+
+<img src="https://img.shields.io/static/v1.svg?label=License&message=${res.license}&color=red"/>
+
 # ${res.projectTitle}
 \r\n ## Table of Contents
 \r\n * [Description](${res.description})
 \r\n * [Installation](${res.installation})
 \r\n * [Usage](${res.usage})
-\r\n * [License](${res.lics})
+\r\n * [License](${res.license})
 \r\n * [Contributing](${res.contributing})
 \r\n * [Tests](${res.tests})
 \r\n * [Questions](${res.questions})
@@ -113,21 +136,26 @@ inquirer.prompt([
 \r\n #### ${res.about}
 \r\n
 
-## Installation
+\r\n ## Installation
+\r\n ### ${res.install}
 
-## Usage
+\r\n ## Usage
+\r\n ### ${res.usageinfo}
 
-## License
+\r\n ## License
+\r\n ### ${res.license}
 
-## Contributing
+\r\n ## Contributing
+\r\n ### ${res.contribution}
 
-## Tests
+\r\n ## Tests
+\r\n ### ${res.testinst}
 
 \r\n ## Questions
 \r\n [GitHub Profile](https://github.com/${res.github})
 \r\n ${res.email}
 
-<img src="https://img.shields.io/static/v1.svg?label=License&message=${res.license}&color=red"/>
+
 
 \r\n ##
     
