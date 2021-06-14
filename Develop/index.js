@@ -61,7 +61,7 @@ inquirer.prompt([
     },
     {
         type: "list",
-        name: "license",
+        name: "lics",
         message: "Press Enter to Confirm License section to be added to README",
         choices: ["#license"]
     },
@@ -126,7 +126,7 @@ inquirer.prompt([
 \r\n * [Description](${res.description})
 \r\n * [Installation](${res.installation})
 \r\n * [Usage](${res.usage})
-\r\n * [License](${res.license})
+\r\n * [License](${res.lics})
 \r\n * [Contributing](${res.contributing})
 \r\n * [Tests](${res.tests})
 \r\n * [Questions](${res.questions})
