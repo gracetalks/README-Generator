@@ -87,6 +87,11 @@ inquirer.prompt([
     },
     {
         type: "input",
+        name: "emailinst",
+        message: "Instructions on How to Reach Me with Additional Questions:",
+    },
+    {
+        type: "input",
         name: "install",
         message: "Please Enter Your installation instructions.",
     },
@@ -134,30 +139,35 @@ inquirer.prompt([
 
 \r\n ## Description
 \r\n #### ${res.about}
-\r\n
+
 
 \r\n ## Installation
-\r\n ### ${res.install}
+\r\n #### ${res.install}
+
 
 \r\n ## Usage
-\r\n ### ${res.usageinfo}
+\r\n #### ${res.usageinfo}
+
 
 \r\n ## License
-\r\n ### ${res.license}
+\r\n #### ${res.license}
+
 
 \r\n ## Contributing
-\r\n ### ${res.contribution}
+\r\n #### ${res.contribution}
+
 
 \r\n ## Tests
-\r\n ### ${res.testinst}
+\r\n #### ${res.testinst}
+
 
 \r\n ## Questions
 \r\n [GitHub Profile](https://github.com/${res.github})
 \r\n ${res.email}
+\r\n #### ${res.emailinst}
 
 
 
-\r\n ##
     
     `;
 
