@@ -15,5 +15,5 @@ Below are the images of the generated README from the command-line and the Previ
 <img src="./Develop/assets/img1.png" alt="Image of the Preview Generated README.md">
 
 ## Usage Instructions
-To generate the following README, you will have to access your command-line and move into the 'Develop' folder of the 'README-Generator' folder. From there, you will call 'node index.js' and follow and answer each generated prompt to have an end-result of a generated README. To check your status of your README, you can right-click on the README.md file tab and it will have an 'Open Preview' tab to preview your generated README.
+To generate the following README, you will have to access your command-line and move into the 'Develop' folder of the 'README-Generator' folder. From there, you will call 'node index.js' and follow and answer each generated prompt to have an end-result of a generated README. To check your status of your README, you can right-click on the README.md file tab and it will have an 'Open Preview' tab to preview your generated README. 
 
