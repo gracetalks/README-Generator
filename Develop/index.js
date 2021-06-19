@@ -88,7 +88,7 @@ inquirer.prompt([
     {
         type: "input",
         name: "emailinst",
-        message: "Instructions on How to Reach Me with Additional Questions:",
+        message: "Instructions on How to Reach You with Additional Questions:",
     },
     {
         type: "input",
@@ -114,7 +114,7 @@ inquirer.prompt([
         type: "list",
         name: "license",
         message: "Please Select a License from the following:",
-        choices: ["MIT", "TNT", "CNC", "None"] 
+        choices: ["MIT", "GNU AGPLv3", "Apache 2.0", "None"] 
     }
 
 

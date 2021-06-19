@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/static/v1.svg?label=License&message=MIT&color=red"/>
 
-# hello
+# The Best Project in the World
 
  ## Table of Contents
 
@@ -24,19 +24,19 @@
 
  ## Description
 
- #### hello
+ #### The best project in the world.
 
 
 
  ## Installation
 
- #### jeifjaiejfijred
+ #### Enter installation instructions here.
 
 
 
  ## Usage
 
- #### afjoiejifjiej
+ #### Enter usage info here.
 
 
 
@@ -48,13 +48,13 @@
 
  ## Contributing
 
- #### jaiorjfiejfje
+ #### Enter contribution guidelines here.
 
 
 
  ## Tests
 
- #### jeofjaejfjeojaoef
+ #### Enter test instructions here.
 
 
 
@@ -62,9 +62,9 @@
 
  [GitHub Profile](https://github.com/gracetalks)
 
- hello@gmail.com
+ iamcynthiaharris@gmail.com
 
- #### aeijfoaejifjiesf
+ #### Step 1, call me. Step 2, reach out to our help desk.
 
 
 
