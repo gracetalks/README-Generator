@@ -11,8 +11,8 @@ This project focuses on creating a high-quality README for an application. The R
 ## Images
 Below are the images of the generated README from the command-line and the Preview README:
 
-<img src="./assets/img2.png" alt="Image of the Generated README.md">
-<img scr="./assets/img1.png" alt="Image of the Preview README.md">
+<img src="./Develop/assets/img2.png" alt="Image of the Generated README.md">
+<img scr="./Develop/assets/img1.png" alt="Image of the Preview README.md">
 
 ## Usage Instructions
 To generate the following README
